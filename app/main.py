@@ -7,8 +7,8 @@ import textToSpeechFunc as voice
 import os
 
 
-speech_key = "b7db8e5888da4c24a6bd59da48e0ee88"
-speech_region = "francecentral"
+speech_key = "your_key"
+speech_region = "your_region"
 
 inGame = True
 
