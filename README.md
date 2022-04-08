@@ -13,4 +13,6 @@ Dans ce repo vous trouverez :
 Dans le fichier requierement.txt, vous trouverez les packages nécessaires pour lancer le projet
 Vous aurez besoin d'un compte azure pour le lancer
 
+Pour exécuter le projet vous aurez besoin d'un compte Azure
+
 Projet fait sous Python 3.9.12
