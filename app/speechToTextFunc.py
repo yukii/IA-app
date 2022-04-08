@@ -4,8 +4,8 @@ from pydub import AudioSegment
 
 # speech to text à partir du micro
 def stt_Mic(speech_key, speech_region):
-    # speech_key = "b7db8e5888da4c24a6bd59da48e0ee88"
-    # speech_region = "francecentral"
+    # speech_key = "Your_key"
+    # speech_region = "Your_region"
 
     speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=speech_region)
     speech_config.speech_recognition_language="fr-FR"

@@ -2,7 +2,7 @@ import requests, uuid, json
 
 def translate_text(text, langue_origin, langue_tar):
     # Add your subscription key and endpoint
-    subscription_key = "7bdcdaca87474cb2bd46e3442e39ee46"
+    subscription_key = "your_key_subcription"
     endpoint = "https://api.cognitive.microsofttranslator.com"
 
     # Add your location, also known as region. The default is global.
