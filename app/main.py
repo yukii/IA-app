@@ -3,6 +3,7 @@
 
 import speechToTextFunc as speech
 import translateFunc as translate
+import textToSpeechFunc as voice
 import os
 
 
@@ -34,6 +35,7 @@ while(inGame):
             lang_to = input("Langage of translate (use contry code) : ")
             translate_text = translate.translate_text(text, lang_from, lang_to)
             print(translate_text)
+            voice.synthesize_to_speaker(translate_text, speech_key, speech_region)
         elif(choice == "2"):
             if(os.path.exists("translate.txt")):
                 f = open("translate.txt", "w")
@@ -61,6 +63,7 @@ while(inGame):
             lang_to = input("Langage of translate (use contry code) : ")
             translate_text = translate.translate_text(text, lang_from, lang_to)
             print(translate_text)
+            voice.synthesize_to_speaker(translate_text, speech_key, speech_region)
         elif(choice == "2"):
             if(os.path.exists("translate_audio.txt")):
                 f = open("translate_audio.txt", "w")
@@ -89,6 +92,7 @@ while(inGame):
         # print(text)
         translate_text = translate.translate_text(text, lang_from, lang_to)
         print(translate_text)
+        voice.synthesize_to_speaker(translate_text, speech_key, speech_region)
         print("What do you want with that ?")
         print("Save in file : press 1")
         print("Quit : press 2")
@@ -103,5 +107,6 @@ while(inGame):
             print("Save in translate_text.txt")
         elif(choice == "2"):
             inGame = False
-
+    elif(user == "4"):
+        inGame = False
 
