@@ -7,3 +7,8 @@ L'application demande à l'utilisateur de faire un choix entre les différentes 
 - Speech to Text via un fichier audio (/!\ ne prends que des fichiers .wav /!\)
 - Traduction de texte
 
+Dans ce repo vous trouverez :
+- Un notebook
+- Un dossier compmrenant les fichiers python ainsi qu'un fichier requierment.txt
+Dans le fichier requierement.txt, vous trouverez les packages nécessaires pour lancer le projet
+Vous aurez besoin d'un compte azure pour le lancer
